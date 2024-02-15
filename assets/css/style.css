@@ -3,7 +3,8 @@
 body {
     background-image: linear-gradient(30deg, rgba(205,227,187,1) 0%,rgba(0,78,76,1) 100%);    
     background-size: cover;
-    height: 100vh;   
+    background-repeat: no-repeat;
+    height: 100vh;  
 }
 
 header {
@@ -13,35 +14,102 @@ header {
 }
 
 header .logo {
-    /* background-color: rgba(255, 0, 0, 0.395); */
-    width: 20%;
+    width: 10%;
     height: 100%;
     display: flex;
 }
 
 header .logo img {
-    width: 150px;
-    /* background-color: blue; */
+    width: 85%;
     margin: auto;
 }
 
 header nav {
-    /* background-color: rgba(234, 255, 0, 0.237); */
     margin: auto;
 }
 
 header nav ul {
     display: flex;
     list-style: none;
-    /* background-color: antiquewhite; */
+    padding: 1px;
 }
-
 header nav ul li {
-    /* background-color: aqua; */
-    margin: 10px;
+    margin: auto;
+    display: flex;
 }
 
-/* footer {
-    background-image: linear-gradient(rgba(50,168,219,.0),rgba(50,168,219,.2));
-    padding: 60px;
-} */
+header nav ul li a {
+    margin-right: 2px;
+}
+
+
+header nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.19);
+}
+
+
+header nav ul li a button {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 20px;
+    border: none;
+}
+
+header .btn-contact {
+    width: 15%;
+    display: flex;
+} 
+
+header .btn-contact a{
+    margin: auto;
+}
+
+header .btn-contact a button {
+    margin: auto;
+    border-radius: 20px;
+    border-color: aliceblue;
+    background-color: rgba(0, 153, 92, 0.326);
+    width: 95px;
+    height: 35px;
+}
+
+header .btn-contact a button:hover {
+    background-color: rgba(0, 0, 0, 0.098);
+    border-color: rgba(240, 248, 255, 0.596);
+}
+
+main {
+    /* background-color: black; */
+    display: block;
+    max-height: 400px;
+    
+}
+
+main .title {
+    /* background-color: aqua; */
+    width: 50%;
+    height: 150px;
+    margin-top: 100px;
+    display: flex;
+    
+}
+
+main .title p {
+    /* background-color: brown; */
+    display: flex;
+    margin: auto 10px auto 200px;
+    font-size: 50px;
+    color: rgba(225, 234, 238, 0.962);
+}
+
+main .describe {
+    /* background-color: black; */
+    height: 300px;
+    display: flex;
+}
+
+main .describe p {
+    /* background-color: brown; */
+    display: flex;
+    margin: 10px 40% auto 200px;
+    font-size: 30px;
+}
