@@ -24,27 +24,28 @@ header .logo img {
     margin: auto;
 }
 
-header nav {
+nav {
     margin: auto;
 }
 
 /* Menu principal - Inicio*/
-header nav ul {
+ul {
     display: flex;
+    float: left;
     list-style: none;
     padding: 1px;
 }
-header nav ul li {
+
+li {
     margin: auto;
     display: flex;
 }
 
-header nav ul li a {
+a {
     margin-right: 2px;
 }
 
-
-header nav ul li a:hover {
+button:hover {
     background-color: rgba(0, 0, 0, 0.19);
 }
 
@@ -52,12 +53,11 @@ header nav ul li a:hover {
     width: 100px;
 }
 
-.primary-btn, .second-btn, .third-btn{
+.primary-btn, .second-btn, .third-btn, .four-btn{
     background-color: rgba(255, 0, 0, 0);
     padding: 20px;
     border: none;
 }
-/* Menu principal - Fim */
 
 /* Submenu Inicio */
 .submenu-primary {
@@ -67,7 +67,7 @@ header nav ul li a:hover {
     display: none;
 }
 
-.menu li:hover > ul {
+.menu li:hover ul {
     display: block;
 }
 
@@ -79,20 +79,22 @@ header nav ul li a:hover {
     width: 100px;
     text-align: center;
 }
-/* Submenu - fim */
 
-/* Submenu secundario - Inicio */
+/* Submenu secundario */
 .submenu-primary li:hover .submenu-second{
     position: absolute;
     left: 65%;
     display: block;
 }
 
-.third-btn {
-    width: 150px;
+/* Submenu terceiro */
+.submenu-third li {
+    display: none;
 }
 
-/* Submenu secundario - Fim */
+.submenu-second li:hover .submenu-third {
+    display: block;
+}
 
 header .btn-contact {
     width: 15%;
