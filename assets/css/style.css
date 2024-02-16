@@ -28,6 +28,7 @@ header nav {
     margin: auto;
 }
 
+/* Menu principal - Inicio*/
 header nav ul {
     display: flex;
     list-style: none;
@@ -47,12 +48,51 @@ header nav ul li a:hover {
     background-color: rgba(0, 0, 0, 0.19);
 }
 
+.primary-btn {
+    width: 100px;
+}
 
-header nav ul li a button {
-    background-color: rgba(255, 255, 255, 0);
+.primary-btn, .second-btn, .third-btn{
+    background-color: rgba(255, 0, 0, 0);
     padding: 20px;
     border: none;
 }
+/* Menu principal - Fim */
+
+/* Submenu Inicio */
+.submenu-primary {
+    position: absolute;
+    top: 60px;
+    width: 160px;
+    display: none;
+}
+
+.menu li:hover > ul {
+    display: block;
+}
+
+.menu li:hover .submenu-second {
+    display: none;
+}
+
+.second-btn {
+    width: 100px;
+    text-align: center;
+}
+/* Submenu - fim */
+
+/* Submenu secundario - Inicio */
+.submenu-primary li:hover .submenu-second{
+    position: absolute;
+    left: 65%;
+    display: block;
+}
+
+.third-btn {
+    width: 150px;
+}
+
+/* Submenu secundario - Fim */
 
 header .btn-contact {
     width: 15%;
@@ -78,14 +118,12 @@ header .btn-contact a button:hover {
 }
 
 main {
-    /* background-color: black; */
     display: block;
     max-height: 400px;
     
 }
 
 main .title {
-    /* background-color: aqua; */
     width: 50%;
     height: 150px;
     margin-top: 100px;
@@ -94,7 +132,6 @@ main .title {
 }
 
 main .title p {
-    /* background-color: brown; */
     display: flex;
     margin: auto 10px auto 200px;
     font-size: 50px;
@@ -102,13 +139,11 @@ main .title p {
 }
 
 main .describe {
-    /* background-color: black; */
     height: 300px;
     display: flex;
 }
 
 main .describe p {
-    /* background-color: brown; */
     display: flex;
     margin: 10px 40% auto 200px;
     font-size: 30px;
