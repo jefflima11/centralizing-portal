@@ -28,8 +28,8 @@ nav {
     margin: auto;
 }
 
-/* Menu principal - Inicio*/
-ul {
+/* Menu principal - Inicio */
+/* ul {
     display: flex;
     float: left;
     list-style: none;
@@ -57,10 +57,10 @@ button:hover {
     background-color: rgba(255, 0, 0, 0);
     padding: 20px;
     border: none;
-}
+} */
 
 /* Submenu Inicio */
-.submenu-primary {
+/* .submenu-primary {
     position: absolute;
     top: 60px;
     width: 160px;
@@ -78,23 +78,26 @@ button:hover {
 .second-btn {
     width: 100px;
     text-align: center;
-}
+} */
 
 /* Submenu secundario */
-.submenu-primary li:hover .submenu-second{
+/* .submenu-primary li:hover .submenu-second{
     position: absolute;
     left: 65%;
     display: block;
-}
+} */
 
 /* Submenu terceiro */
-.submenu-third li {
+/* .submenu-third li {
     display: none;
 }
 
 .submenu-second li:hover .submenu-third {
     display: block;
-}
+} */
+
+
+/* Corpo */
 
 header .btn-contact {
     width: 15%;
@@ -150,3 +153,209 @@ main .describe p {
     margin: 10px 40% auto 200px;
     font-size: 30px;
 }
+
+.card {
+    width: 18rem;
+}
+
+/* Ramais */
+
+.list {
+    width: 60%;
+    margin: auto;
+    padding: 0 0 25vh 0;
+}
+
+.list-title {
+    margin: 100px auto 30px;
+    height: 50px;
+    text-align: center;
+}
+
+.list-title h1 {
+    font-size: 40px;
+    background: rgba(0, 0, 0, 0.081);
+}
+
+
+
+input[type=text] {
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    border: none;
+    outline: none;
+    border-bottom: 0.2em solid #238b09b2;
+    background: rgb(255, 255, 255);
+    border-radius: 0.2em 0.2em 0 0;
+    padding: 0.4em;
+    color: #000000;    
+}
+
+button {
+    margin: 20px;
+}
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+
+.btn-search {
+    background-color: #12de23;
+  background-image: linear-gradient(315deg, #1b5a04c6 0%, #2b7c35aa 74%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+  }
+  .btn-search:hover{
+    background-color: #59e382;
+  background-image: linear-gradient(315deg, #82cc97 0%, #03c841 74%);
+  }
+  .btn-search span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-search:before,
+  .btn-search:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    top: 0;
+     box-shadow:  4px 4px 6px 0 rgba(255,255,255,.9),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.9),
+      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+    transition: all 0.3s ease;
+  }
+  .btn-search:before {
+    height: 0%;
+    width: .1px;
+  }
+  .btn-search:after {
+    width: 0%;
+    height: .1px;
+  }
+  .btn-search:hover:before {
+    height: 100%;
+  }
+  .btn-search:hover:after {
+    width: 100%;
+  }
+  .btn-search span:before,
+  .btn-search span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0;
+    box-shadow:  4px 4px 6px 0 rgba(255,255,255,.9),
+                -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+      inset -4px -4px 6px 0 rgba(255,255,255,.9),
+      inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+    transition: all 0.3s ease;
+  }
+  .btn-search span:before {
+    width: .1px;
+    height: 0%;
+  }
+  .btn-search span:after {
+    width: 0%;
+    height: .1px;
+  }
+  .btn-search span:hover:before {
+    height: 100%;
+  }
+  .btn-search span:hover:after {
+    width: 100%;
+  }
+
+ /* .search button {
+     background: rgba(21, 126, 17, 0.589);
+     padding: 3px 5px;
+     font-size: 15px;
+     border-radius: 7px;
+     border-color: rgb(255, 255, 255);
+ } */
+
+.list table {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100px;
+}
+
+.table-title {
+    margin-bottom: 10px;
+    height: 40px;
+}
+
+.table-title  th {
+    font-size: 25px;
+    background: rgba(0, 0, 0, 0.21);
+}
+
+.table-title #setor {
+    width: 75%;
+}
+
+/* table body */
+
+tbody tr {
+    background: rgba(0, 0, 0, 0.21);
+}
+
+tbody td {
+    font-size: 20px;
+    padding: 4px;
+}
+
+#ds-setor {
+    width: 75%;
+}
+
+#cd-ramal {
+    text-align: center;
+}
+
+/* Rodapé ramais */
+.pagination {
+    margin: auto;
+    width: 60%;
+    height: 40px;
+    display: flex;
+}
+
+.pagination {
+    margin: 300px 0 0 370px;
+}
+
+.pagination a {
+    background: rgba(21, 126, 17, 0.589);
+    padding: 3px 13px;
+    border-radius: 10%;
+    font-weight: 900;
+    font-size: 20px;
+    border-radius: 10%;
+    color: antiquewhite;
+}
+
+.pagination a:hover {
+    background: rgba(4, 67, 2, 0.858);
+}
+
+/* Input de ramais */
