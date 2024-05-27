@@ -340,8 +340,8 @@ tbody td {
     display: flex;
 }
 
-.pagination .btn {
-    margin: 10px;
+.pagination {
+    margin: 300px 0 0 370px;
 }
 
 .pagination a {
@@ -351,6 +351,7 @@ tbody td {
     font-weight: 900;
     font-size: 20px;
     border-radius: 10%;
+    color: antiquewhite;
 }
 
 .pagination a:hover {

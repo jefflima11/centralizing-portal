@@ -20,7 +20,7 @@
     <header>
         <div class="logo">
             <img class="m-2" src="../img/logoMarca.png" alt="">
-            <div class="m-3">
+            <div class="">
                 <a href="../../index.html"><button type="button" class="btn btn-outline-light">Return</button></a>
             </div>
         </div>
@@ -29,7 +29,7 @@
             <div class="btn-group">
                 <button class="btn btn-outline-light dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">Sistemas</button>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Soul MV</a></li>
+                    <li><a class="dropdown-item" href="./mv-sistemas.html">Soul MV</a></li>
                     <li><a class="dropdown-item" href="#">Saw</a></li>
                 </ul>
             </div>
@@ -43,11 +43,11 @@
             </div>
 
             <div class="btn-group">
-                <button class="btn btn-outline-light" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">Ramais</button>
+                <a href="#" class="btn btn-outline-light m-4">Ramais</a>
             </div>
 
             <div class="btn-group">
-                <button class="btn btn-outline-light" data-bs-toggle="dropdown" data-bs-auto-close="true" aria-expanded="false">E-mail</button>
+                <a href="#" class="btn btn-outline-light m-4">E-mail</a>
             </div>
         </nav>
 
@@ -122,7 +122,7 @@
         // Links de paginação
         $totalPages = ceil($totalCount / $resultsPerPage);
         if ($totalPages > 1) {
-            echo '<div class="btn" role="" aria-label="Páginas">';
+            echo '<div class="btn" id="pg" role="" aria-label="Páginas">';
             for ($i = 1; $i <= $totalPages; $i++) {
                 echo '<a href="?page=' . $i . '&pesquisa=' . urlencode($pesquisa) . '" class="">' . $i . '</a>';
             }
